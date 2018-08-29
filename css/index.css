@@ -1,5 +1,10 @@
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
 body{    overflow-x: hidden;
-    overflow-y: hidden;background-color:#093655;color:#fff;text-align:center;min-width:1920px;padding:10px 0}
+    overflow-y: hidden;background-color:#093655;color:#fff;text-align:center;width:1920px;height: 1080px; padding:10px 0}
 .mt6{margin-top:6px!important}
 .mt15{margin-top:15px!important}
 .mt30{margin-top:30px;}
@@ -37,7 +42,7 @@ body{    overflow-x: hidden;
 .my-table table tr{border-top:1px solid #195076;border-bottom:1px solid #195076}
 .my-table table tr td{text-align:center}
 .my-table table thead{height:32px;line-height:32px;background-color:#04273b}
-.my-table table tbody tr{height:32px;line-height:32px}
+.my-table table tbody tr{height:30px;line-height:30px}
 .my-table table tbody tr:nth-child(2n+2){background-color:#04273b}
 .my-table table tbody tr td.on{color:#d25548}
 .my-table table tbody tr td.on1{color:#61ac31}
@@ -46,15 +51,15 @@ body{    overflow-x: hidden;
 .my-table table tr td:last-child{border-right:0}
 .my-table-02 tr{height: 30px!important;line-height: 30px!important;}
 
-.model_02{margin-right:10px;height:357px}
+.model_02{margin-right:10px;height:350px}
 .model_03{padding: 1px 0;}
-.model_04,.model_05{margin-right:10px;height:177px;margin-top:13px;position:relative}
-.model_06{margin-right:10px;margin-top:10px;height:360px}
-.model_07{margin-left:10px;height:357px}
-.model_08{margin-left:10px;height:370px;margin-top:10px}
-.model_09{margin-left:10px;height:360px;margin-top:10px}
-.model_10{margin-top: 10px;}
-.model_11{margin-top:10px;padding: 8px 0;}
+.model_04,.model_05{margin-right:10px;height:168px;margin-top:13px;position:relative}
+.model_06{margin-right:10px;margin-top:9px;height:337px}
+.model_07{margin-left:10px;height:350px}
+.model_08{margin-left:9px;height:357px;margin-top:6px}
+.model_09{margin-left:10px;height:335px;margin-top:9px}
+.model_10{margin-top: 8px;}
+.model_11{margin-top:8px;padding: 8px 0;}
 
 .title-box{margin-bottom: 10px;}
 .title-box p{margin:0 0 4px}
@@ -65,9 +70,10 @@ body{    overflow-x: hidden;
 .title-box .middle .name{padding-top:14px;color:#a9deff;font-size:14px}
 .title-box .middle-01 .name{color:#a9deff;}
 
-.table-content{margin-bottom: 8px;}
-.table-content .title{padding-bottom: 8px;font-size: 12px;}
-.table-content .num{font-size: 20px;border-bottom: 1px solid #fff;}
+.table-content{margin-bottom: 7px;}
+.table-content .title{padding-bottom: 12px;font-size: 12px;}
+.model_06 .table-content .title{padding-bottom: 6px;font-size: 12px;}
+.table-content .num{font-size: 19px;border-bottom: 1px solid #fff;}
 .table-content .num_blue{color: #5d6bc0;border-color: #5d6bc0;}
 .table-content .num_green{color: #aed92a;border-color: #aed92a;}
 .table-content .num_orange{color: #fa753c;border-color: #fa753c;}
