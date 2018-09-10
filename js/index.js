@@ -239,7 +239,7 @@ function groupData(total) {
     nextFluxion(barPosition);
 
     leftFourData($("#model_06 .my-col-con .on").attr("pos"));
-    rightThreeData($("#model_09 .my-col-con .on").attr("pos"))
+    rightThreeData($("#model_09 .my-col-con .on").attr("pos"));
 
     var echarts_01_json = {
         "time": NOW_TIME,
@@ -455,7 +455,8 @@ function leftFourData(flu) {
     $("#model_06 .FLOW_ELS_0").html(FLOW_ELS_0[flu].value_number.mytoFixed(4));
     $("#model_06 .FLOW_ELS_1").html(FLOW_ELS_1[flu].value_number.mytoFixed(4));
     $("#model_06 .FLOW_ELS_2").html(FLOW_ELS_2[flu].value_number.mytoFixed(4));
-    if (STATISTIC_VALUE.result.length > 0) {
+
+    if (IS_RUN_STATISTIC) {
         $("#model_06 .first .num").html(STATISTIC_VALUE.result[flu].max_val);
         var max_speed = STATISTIC_VALUE.result.slice(12, 18);
         $("#model_06 .second .num").html(max_speed[flu].max_val);
@@ -536,7 +537,7 @@ function rightThreeData(flu) {
     $("#model_09 .PRE_ELS_2").html(PRE_ELS_2[flu].value_number.mytoFixed(4));
     $("#model_09 .FPBC_A").html(FPBC_A[flu].value_number.mytoFixed(2));
     $("#model_09 .FPBC_B").html(FPBC_B[flu].value_number.mytoFixed(2));
-    if (STATISTIC_VALUE.result.length > 0) {
+    if (IS_RUN_STATISTIC) {
         var max_pem_jjq_in = STATISTIC_VALUE.result.slice(6, 12);
         var max_tem_jjq_out = STATISTIC_VALUE.result.slice(18, 24);
         $("#model_09 .first .num").html(max_tem_jjq_out[flu].max_val);

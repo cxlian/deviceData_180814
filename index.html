@@ -453,15 +453,18 @@
     }
 
 
-    var STATISTIC_VALUE;
+    var STATISTIC_VALUE;//统计数据
+    var IS_RUN_STATISTIC=false;//是否执行统计代码(解决统计数据有可能出错的问题)
     $.ajax({
         url: window.DATA_PATH + '/icz_out_consumer/kafka/queryMaxVal',
         //   url: 'http://192.168.9.47:9001/icz_out_consumer/kafka/queryMaxVal',
         type: 'get',
         dataType: 'json',
         success: function (data) {
-            STATISTIC_VALUE = data;
-
+            if(data.result.length>0){
+                IS_RUN_STATISTIC = true;
+                STATISTIC_VALUE = data;
+            }
         }
     });
 

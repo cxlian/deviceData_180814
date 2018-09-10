@@ -2,7 +2,7 @@
     window.pathJoin = function (path1, path2) {return path1 + path2;};
     var Dev="http://125.77.116.145:6380";
     //设备数据
-    var Dcv="http://125.77.116.145:9001";
+    var Dcv="http://125.77.116.145:8081";
     var Pord="";
     var DATA_PATH=Dcv
     var SERVER_PATH =Dev;
