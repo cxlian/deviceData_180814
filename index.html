@@ -421,7 +421,7 @@
 
 <script>
     PL._init();
-    PL.joinListen('/TESTGROUP_90');
+    PL.joinListen('/TESTGROUP');
 
     function onData(event) {
         $(".loading").fadeOut();
@@ -431,10 +431,13 @@
     }
 
     function parseAjaxData(event, calls) {
-        var stream = "TESTGROUP"
+        var stream = "TESTGROUP_90"
         var companyData = decodeURIComponent(event[stream]);
         var total = eval('(' + companyData + ')');
-        groupData(total);
+        if(total){
+            groupData(total);
+        }
+        
     }
     //初始化
     function AjaxKafkaData(page) {
